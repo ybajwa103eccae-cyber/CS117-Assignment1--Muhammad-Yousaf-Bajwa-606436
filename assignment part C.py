@@ -60,11 +60,11 @@ print(loaded_divider(12, 1000, 1000, 500))
 
 #C5. Star-Delta (Y-Δ) Transformation
 print()
-def star_to_delta(ra, rb, rc):
+def s_to_d(ra, rb, rc):
     numerator = ra*rb + rb*rc + rc*ra
     r_ab = numerator / rc  
     r_bc = numerator / ra
     r_ca = numerator / rb
     return (round(r_ab, 2), round(r_bc, 2), round(r_ca, 2))
-print(star_to_delta(10, 20, 30))
+print(s_to_d(10, 20, 30))
        
